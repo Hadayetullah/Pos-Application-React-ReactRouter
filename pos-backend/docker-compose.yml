@@ -3,10 +3,10 @@
 
 services:
   web:
-    build: "E:/Resort Rental Fullstack App (Airbnb Clone)/resort-rental-backend"
+    build: "E:/POS - React - React Router - jsx - Redux/pos-backend"
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - "E:/Resort Rental Fullstack App (Airbnb Clone)/resort-rental-backend/:/usr/src/resort-rental-backend/"
+      - "E:/POS - React - React Router - jsx - Redux/pos-backend/:/usr/src/pos-backend/"
     ports:
       - 8000:8000
     env_file:
@@ -20,7 +20,7 @@ services:
     environment:
       - POSTGRES_USER=postgresuser
       - POSTGRES_PASSWORD=postgrespassword
-      - POSTGRESS_DB=resortrental
+      - POSTGRESS_DB=pos_react_reactrouter_jsx_redux
 
 volumes:
   postgres_data:
