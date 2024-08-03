@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import PosTopLeftNav from "../components/pos/PosTopLeftNav";
 
 const POS = () => {
   return (
@@ -27,12 +26,7 @@ const POS = () => {
             // }}
             className="w-full bg-white overflow-y-scroll duration-[0.3s] translate-y-0 pos-md:min-w-[580px] pos-md:max-w-full pos-md:overflow-y-hidden"
           >
-            <div>
-              <nav className="left__nav__top grid grid-cols-[max-content_1fr] gap-[0.75rem] items-center bg-white h-[60px] max-w-full p-2.5">
-                POS
-              </nav>
-              <FontAwesomeIcon icon={faBars} />
-            </div>
+            <PosTopLeftNav />
           </div>
         </div>
       </div>
