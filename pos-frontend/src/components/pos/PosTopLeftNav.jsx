@@ -28,7 +28,7 @@ import {
 
 const PosTopLeftNav = () => {
   return (
-    <nav className="left__nav__top grid grid-cols-[max-content_1fr] gap-[0.75rem] items-center bg-white h-[60px] max-w-full p-2.5">
+    <nav className="left__nav__top grid grid-cols-[max-content_1fr] gap-[0.75rem] items-center bg-[#999999] h-[60px] max-w-full p-2.5">
       <FontAwesomeIcon
         icon={faBars}
         className="pos__left__bar text-[25px] p-[5px_0_0_20px] text-[#6F6F6F] pos-md:m-[1px 25px 0px 25px] pos-md:text-[#e6e8ea] pos-md:text-[33px] pos-md:font-black pos-md:p-0 pos-xl:m-[1px_15px_0_25px] pos-xl:text-[30px]"

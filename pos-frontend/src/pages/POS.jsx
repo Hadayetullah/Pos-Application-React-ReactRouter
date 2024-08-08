@@ -1,3 +1,4 @@
+import PosCustomerNav from "../components/pos/PosCustomerNav";
 import PosTopLeftNav from "../components/pos/PosTopLeftNav";
 
 const POS = () => {
@@ -27,6 +28,7 @@ const POS = () => {
             className="w-full bg-white overflow-y-scroll duration-[0.3s] translate-y-0 pos-md:min-w-[580px] pos-md:max-w-full pos-md:overflow-y-hidden"
           >
             <PosTopLeftNav />
+            <PosCustomerNav />
           </div>
         </div>
       </div>
