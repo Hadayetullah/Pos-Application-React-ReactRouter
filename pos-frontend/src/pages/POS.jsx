@@ -1,3 +1,4 @@
+import DisplaySelectedContentsHeader from "../components/pos/DisplaySelectedContentsHeader";
 import PosCustomerNav from "../components/pos/PosCustomerNav";
 import PosTopLeftNav from "../components/pos/PosTopLeftNav";
 
@@ -29,6 +30,10 @@ const POS = () => {
           >
             <PosTopLeftNav />
             <PosCustomerNav />
+
+            <div className="body__left w-full bg-[#fafafa]">
+              <DisplaySelectedContentsHeader />
+            </div>
           </div>
         </div>
       </div>
