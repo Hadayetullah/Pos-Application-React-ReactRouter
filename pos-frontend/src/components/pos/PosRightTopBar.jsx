@@ -26,18 +26,20 @@ import {
   faTrashCan,
 } from "@fortawesome/free-regular-svg-icons";
 
+import SearchProducts from "./SearchProducts";
+
 const PosRightTopBar = () => {
   return (
-    <nav className="right__nav__top max-w-full flex justify-between items-center justify-items-center h-[50px] shadow-[0px_2px_9px_-3px_hex(#333)]">
+    <nav className="right__nav__top max-w-full flex justify-between items-center justify-items-center h-[50px] shadow-[0px_2px_9px_-3px] shadow-[#333333]">
       <FontAwesomeIcon
         icon={faMagnifyingGlass}
         className="right__nav__top-search float-left w-[30px] h-[30px] my-[20px] text-[#676767] pos-md:ml-[30px]"
       />
       {/* <input onChange={(e)=>handelSearch(e)} type="text" className="right__nav__top-input" placeholder='Search Products...' /> */}
-      {/* <SearchProducts
-        data={state.pos.products}
-        handleSelectData={handleSelectData}
-      /> */}
+      <SearchProducts
+      // data={state.pos.products}
+      // handleSelectData={handleSelectData}
+      />
       <FontAwesomeIcon
         icon={faQrcode}
         className="right__nav__top-qr float-right ml-auto mr-[20px] w-[35px] h-[35px] text-[#676767]"
